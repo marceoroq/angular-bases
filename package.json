@@ -5,6 +5,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:github-pages": "ng build --base-href ./ && rm -rf docs && mv dist/bases/browser/* dist/bases/ && rm -rf dist/bases/browser && mv dist/bases docs/ && rm -rf dist",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
